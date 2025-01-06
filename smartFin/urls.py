@@ -22,4 +22,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/', include('product.urls')),  # product 앱 URL 연결
+    path('', include('pages.urls')),
 ]
